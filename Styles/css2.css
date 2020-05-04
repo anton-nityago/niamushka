@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color: white;
+	cursor: default;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	background-image: url("../Public/fon1.png");
+}
+
+#title{
+	position: relative;
+	color: white; 
+	text-align: center;
+	font-family: "Exo 2.0"; 
+	font-size: 36px; 
+	width: 100%; 
+	text-shadow: 0px 0px 1px #999;
+	top: 17px; 
+}
+
+#app{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 50%; 
+    top: 16vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1; 
+}
+
+footer{
+	height: 40px; 
+	width: 100%; 
+	color: white; 
+	position: relative;
+}
+
+.card{
+	position: relative;
+	font-family: Trebuchet MS; 
+	width: 320px; 
+	margin-left: 40px; 
+	margin-right: 40px; 
+	margin-top: 40px; 
+}
+
+.top{
+	position: absolute;
+	top: 21px;
+	left: 48px; 
+	font-size: 16px; 
+	height: 10px; 
+	color: #666666;
+}
+
+.title{
+	position: absolute;
+	top: 44px; 
+	left: 49px; 
+	font-size: 48px; 
+	font-weight: bold; 
+	margin-left: -2px;
+	color: #000000;
+}
+
+.subtitle{
+	top: 99px; 
+	left: 49px; 
+	position: absolute;
+	font-size: 24px; 
+	font-weight: bold; 
+	color: #000000;
+}
+
+.description{
+	top: 142px; 
+	left: 49px; 
+	position: absolute;
+	font-size: 14px; 
+	color: #666666;
+}
+
+.stick-num{
+	top: 392px; 
+	left: 235px; 
+	position: absolute;
+	font-size: 42px; 
+	width: 60px; 
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.stick-text{
+	top: 432px; 
+	left: 255px; 
+	position: absolute;
+	font-size: 21px; 
+	font-weight: bold; 
+	color: #FFFFFF;
+}
+
+.bottom{
+	color: #DDD; 
+	text-align: center;
+	margin-top: 8px; 
+	text-shadow: 0px 0px 1px #999;
+}
+
+.bottom-text{
+	display: inline-block;
+	font-size: 13px; 
+}
+
+.bottom-button{
+	display: inline-block;
+	cursor: pointer;
+	
+}
+
+.button-text{
+	font-size: 13px;
+	margin-left: 3px; 
+	color: #2ea8e5; 
+}
+
+.button-line{
+	font-size: 8px;
+	line-height: 0px; 
+	height: 0px;
+	margin-top: -4px;
+	margin-left: 2px;
+	opacity: 0;  
+	color: #2ea8e5;  
+}
+
+.bottom-text-line{
+	font-size: 6px;
+	line-height: 0px; 
+	height: 0px;
+	margin-top: -4px;
+	opacity: 0; 
+}
+
+.back{
+	position: fixed;
+	height: 110vh; 
+	width: 110vw; 
+	background-color: black;
+	z-index: 0 
+	left: -100px;
+	opacity: 0.2; 
+	background: linear-gradient(to top, #000 20%, #FFF3 50%, #000 80%);
+}
+
+/* мелкий ноутбук*/
+@media  (orientation: landscape) and (max-height: 650px){     
+	#app{
+		position: relative;
+    	display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+    	height: 50%; 
+	    top: 5vh;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    margin: auto;
+	    z-index: 1; 
+	}
+}
+
+ /*все кроме - ipad pro - в портрете*/
+@media  (orientation: portrait) and (max-width: 1000px){      
+	#app{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+    	
+    	height: 90%; 
+	 	position: absolute;
+	    top: 0px;
+	    right: 0;
+	    bottom: 0px;
+	    left: 0;
+	    margin: auto;
+	    z-index: 1; 
+	}
+}
+
+@font-face {
+	font-family: 'Trebuchet MS';
+	src: url('../Fonts/TrebuchetMS.eot');
+	src: url('../Fonts/TrebuchetMS.eot?#iefix') format('embedded-opentype'),
+	url('../Fonts/TrebuchetMS.woff') format('woff'),
+	url('../Fonts/TrebuchetMS.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Trebuchet MS';
+	src: url('../Fonts/TrebuchetMS-Bold.eot');
+	src: url('../Fonts/TrebuchetMS-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../Fonts/TrebuchetMS-Bold.woff') format('woff'),
+	url('../Fonts/TrebuchetMS-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo 2.0';
+    src: url('../Fonts/exo.woff2') format('woff2'),
+         url('../Fonts/exo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

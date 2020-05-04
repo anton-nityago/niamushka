@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<html>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.8">
+			<link rel="stylesheet" type="text/css" href="Styles/css2.css">
+			<script type="text/javascript" src="Data/data.json"></script>
+		<head>
+			<title>Niamushka ver.2</title>
+			<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		</head>
+			<body>
+				<div class="back"></div>
+				<div id="app">
+					<div id="title">{{title}}</div>
+					<comp-a v-for="it in mydata" 
+						:key="it.top1" 
+						:top1="it.top1" 
+						:top2="it.top2" 
+						:title="it.title" 
+						:subtitle="it.subtitle" 
+						:description="it.description" 
+						:sticker1="it.sticker1" 
+						:bottom1="it.bottom1" 
+						:bottom2="it.bottom2" 
+						:sticker2="it.sticker2" 
+						:def="it.def" 
+						:hov="it.hov" 
+						:sel="it.sel" 
+						:dis="it.dis"
+						:disable="it.disable"
+						:distxt="it.distxt">
+					</comp-a>
+					<footer></footer>
+				</div>
+			</body>
+		<script type="text/javascript" src="Source/comp.js"></script>
+		<script type="text/javascript" src="Source/main.js"></script>
+	</html>
